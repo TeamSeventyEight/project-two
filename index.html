@@ -6,6 +6,21 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="js/jquery-2.1.4.min.js"></script>
+
+    <style>
+        .mdl-button {
+            height: 150px;
+            width: 150px;
+            margin: 0 auto;
+        }
+        
+        #content {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,12 +31,6 @@
             <div class="mdl-layout__header-row">
                 <!-- Title -->
                 <span class="mdl-layout-title">DO IT! Fitness Tracker</span>
-            </div>
-            <!-- Tabs -->
-            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-                <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
-                <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
-                <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
             </div>
         </header>
         <div class="mdl-layout__drawer">
@@ -36,21 +45,38 @@
             </nav>
         </div>
         <main class="mdl-layout__content">
-            <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
-                <div class="page-content">
-                    <!-- Your content goes here -->
+            <div id="content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                            New Activity
+                        </button>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                            History
+                        </button>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                            Routes
+                        </button>
+                    </div>
                 </div>
-            </section>
-            <section class="mdl-layout__tab-panel" id="fixed-tab-2">
-                <div class="page-content">
-                    <!-- Your content goes here -->
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                            Tutorial
+                        </button>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                            Settings
+                        </button>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col"></div>
                 </div>
-            </section>
-            <section class="mdl-layout__tab-panel" id="fixed-tab-3">
-                <div class="page-content">
-                    <!-- Your content goes here -->
-                </div>
-            </section>
+            </div>
         </main>
     </div>
 </body>
